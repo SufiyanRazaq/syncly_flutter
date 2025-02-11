@@ -3,7 +3,7 @@
 
 A Flutter package that enables offline-first data synchronization with seamless real-time syncing when the device reconnects to the internet. Perfect for apps that require reliable data storage and synchronization, even when the user is offline.
 
-Features:
+Features:\
 ✔ Offline-First Data Handling – Automatically saves tasks locally and syncs when online.\
 ✔ Real-Time Sync Status – Get live updates on syncing status through stream listeners.\
 ✔ Customizable Conflict Resolution – Multiple strategies like Last Write Wins, Server Wins, Local Wins, and Manual Merge.\
