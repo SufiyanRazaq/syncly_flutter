@@ -10,7 +10,7 @@ Features:\
 ✔ Automatic Network Detection – Detects real internet connectivity, not just network presence.\
 ✔ Delta Sync – Efficient synchronization by pushing only changed fields.\
 ✔ Manual Sync Trigger – Option to manually trigger data sync for full control.\
-✔ Filter Tasks – View all, synced, or unsynced tasks.\
+✔ Filter Tasks – View all, synced, or unsynced tasks.
 
 
 ## Installation:
