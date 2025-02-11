@@ -1,9 +1,8 @@
 name: syncly_flutter
-description: "A Flutter package for offline-first data storage and seamless synchronization. Automatically saves data locally and syncs it with the server when the device reconnects to the internet, featuring customizable conflict resolution strategies."
-version: 0.0.1
+description: A Flutter plugin for seamless offline data synchronization with local storage and conflict handling.
+version: 0.0.2
 homepage: https://sufiyanrazaq.com/
 repository: https://github.com/SufiyanRazaq/syncly_flutter
-
 
 environment:
   sdk: '>=3.4.4 <4.0.0'
@@ -14,7 +13,7 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  web: ^0.5.1
+  web: ^1.1.0
   plugin_platform_interface: ^2.0.2
   connectivity_plus: ^6.1.3
   path_provider: ^2.1.5
@@ -33,12 +32,5 @@ flutter:
         pluginClass: SynclyFlutterPlugin
       ios:
         pluginClass: SynclyFlutterPlugin
-      linux:
-        pluginClass: SynclyFlutterPlugin
       macos:
         pluginClass: SynclyFlutterPlugin
-      windows:
-        pluginClass: SynclyFlutterPluginCApi
-      web:
-        pluginClass: SynclyFlutterWeb
-        fileName: syncly_flutter_web.dart

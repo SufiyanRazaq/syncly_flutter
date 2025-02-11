@@ -1,3 +1,4 @@
+/// Enum to represent different types of sync events.
 enum SyncEventType {
   syncStarted,
   syncCompleted,
@@ -9,11 +10,13 @@ enum SyncEventType {
   connectionLost,
 }
 
+/// A class representing an event during the sync process.
 class SyncEvent {
-  final SyncEventType type;
-  final String message;
-  final dynamic data;
-  final DateTime timestamp;
+  final SyncEventType type; // Type of the event
+  final String message; // A message describing the event
+  final dynamic
+      data; // Optional data associated with the event (e.g., conflicted data)
+  final DateTime timestamp; // When the event occurred
 
   SyncEvent({
     required this.type,

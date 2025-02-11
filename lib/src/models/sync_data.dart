@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+/// Enum to represent the sync status of the data.
 enum SyncStatus {
   synced,
   unsynced,
@@ -26,6 +27,7 @@ class SyncData {
     this.status = SyncStatus.unsynced,
   });
 
+  /// Factory method to create a SyncData object from JSON.
   factory SyncData.fromJson(Map<String, dynamic> json) {
     return SyncData(
       id: json['id'],
@@ -43,6 +45,7 @@ class SyncData {
     );
   }
 
+  /// Converts the SyncData object to JSON for storage or API transmission.
   Map<String, dynamic> toJson() {
     return {
       'id': id,
@@ -55,6 +58,7 @@ class SyncData {
     };
   }
 
+  /// Creates a copy of the current SyncData with modified fields.
   SyncData copyWith({
     String? id,
     String? key,
@@ -75,6 +79,7 @@ class SyncData {
     );
   }
 
+  /// Checks if two SyncData objects are equal.
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
